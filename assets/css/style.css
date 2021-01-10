@@ -867,6 +867,11 @@ section {
   color:#cc1616;
   padding: 35px 20px 45px 20px;
 }
+@media (max-width: 768px) {
+  .services .call-box {
+    font-size: 30px;
+  }
+}
 /* .services .cta-btn {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
