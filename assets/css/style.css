@@ -688,10 +688,10 @@ section {
 
 .services .icon-box .icon {
   margin: 0 auto;
-  width: 64px;
-  height: 64px;
+  width: 80px;
+  height: 80px;
   background: #cc1616;
-  transition: all .3s ease-out 0s;
+  transition: all .5s ease-out 0s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -701,7 +701,7 @@ section {
 
 .services .icon-box .icon i {
   color: #fff;
-  font-size: 28px;
+  font-size: 40px;
 }
 
 .services .icon-box .icon::before {
@@ -712,7 +712,7 @@ section {
   height: 100%;
   width: 100%;
   background: #fce5e5;
-  transition: all .3s ease-out 0s;
+  transition: all .5s ease-out 0s;
   transform: translateZ(-1px);
 }
 
@@ -733,6 +733,7 @@ section {
 }
 
 .services .icon-box:hover {
+  transition: all 0.5s;
   background: #cc1616;
   border-color: #cc1616;
   padding: 70px 20px 90px 20px;
@@ -759,8 +760,9 @@ section {
 --------------------------------------------------------------*/
 .cta {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/WhatsApp\ Image\ 2020-12-20\ at\ 1.03.15\ PM.jpeg") fixed center center;
-  background-size: cover;
-  padding: 120px 0;
+  background-size:cover;
+  padding: 60px 0;
+  
 }
 
 .cta h3 {
@@ -782,16 +784,111 @@ section {
   display: inline-block;
   padding: 10px 28px;
   transition: 0.5s;
-  margin-top: 10px;
   border: 2px solid #fff;
   color: #fff;
+  display: flex;
+  
+  align-items:center;
+  justify-content: center;
+  font-size: 20px;
 }
-
+.cta .cta-btn i{
+  display: flex;
+  
+  align-items:center;
+  justify-content: space-around;
+  font-size: 30px;
+}
 .cta .cta-btn:hover {
   background: #cc1616;
+  transition: all 0.5ss;
   border: 2px solid #cc1616;
 }
+.contact .info-box-cta{
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.contact .info-box-cta i {
+  font-size: 60px;
+  color: #ffffff;
+  border-radius: 50%;
+  padding: 40px;
+  margin: 0px 40px;
+  transition: all .5s;
+  border: 2px solid #ffffff;
+}
+.contact .info-box-cta i:hover {
+  transition: all .5s;
+  color: #cc1616;
+  border: 2px solid #cc1616;
+}
+.cta .contact .cta-head{
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.cta .contact .call-action{
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+}
+@media (max-width: 768px) {
+  .contact .info-box-cta i {
+    font-size: 40px;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 0px 10px;
+    border: 2px solid #ffffff;
+  }
+}
 
+.services .call-box {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  padding: 40px 20px;
+  transition: all ease-in-out 0.3s;
+  background-color: #cc1616 ;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 40px;
+}
+.services .call-box:hover {
+  transition: all 0.5s;
+  background: white;
+  border-color: white;
+  color:#cc1616;
+  padding: 35px 20px 45px 20px;
+}
+/* .services .cta-btn {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  color:#cc1616;
+  display: flex;
+  background-color: white;
+  align-items:center;
+  justify-content: center;
+  font-size: 20px;
+}
+.services .call-box:hover .cta-btn {
+  background-color: #cc1616;
+  transition: all 0.5ss;
+  border: 2px solid #cc1616;
+} */
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -1485,4 +1582,31 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+}
+
+
+
+.group {
+	position:relative;
+  display:flex;
+  justify-content: flex-end;
+  
+}
+.group select{
+  margin: 10px 0px;
+  padding: 10px;
+  border-radius:1px;
+  border:4px solid black;
+  color:white;
+  background-color:#cc1616;
+  border:2px solid black;
+  
+  
+}
+
+.group select option {
+	
+	margin: 2px;
+	background-color:#cc1616;
+	padding: 0px !important;
 }
